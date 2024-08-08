@@ -1,6 +1,6 @@
 //COMPARAISON
 
-const X = 19;
+const X = 23;
 const Y = 10;
 
 //Affichage des resultat dans la consol
