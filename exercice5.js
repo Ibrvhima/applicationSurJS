@@ -3,4 +3,4 @@
 const myLastName = "Ibrahima";
 const myFristName = "Diallo ";
 const myName = myFristName + myLastName;
-console.log(myName);
+console.log(`mon nom c'est ${myName}`);
