@@ -28,4 +28,17 @@ for (let i = 1; i <= 10; i++) {
 
 //N°3 Compter les voyelle dans une chaîne
 
+let voyelles =['a','e', 'i', 'o','u','y','A','E','I','O','U','Y'];
+let compteurVoyelle = 0;
 const string = "bonjour le monde";
+
+//definir une variable pour stocker les voyelles et en miniscule et en majuscule
+
+
+for(let i = 0; i<= string.length; i++){
+  if(voyelles.includes(string[i])){
+    compteurVoyelle++;
+  }
+}
+console.log(`le nombre de voyelle dans la chaine "${string}" donnée est ${compteurVoyelle}`);
+
