@@ -28,7 +28,11 @@ console.log(age);
 
 //parcourir les elements du tableau spécifiquement
 
-const table=["ibrahim","ibrahim","ibrahim","ibrahim"]
+const table=[1,2,3,4,5,6,7];
+for (let i = table.length -1 ; i >= 0 ; i--) {
+         
+         console.log(table[i]);      
+}
 
 
          
