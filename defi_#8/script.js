@@ -29,17 +29,19 @@ const matriceB = [
   [6, 5, 4],
   [3, 2, 1],
 ];
-const prodMatrice =[
-  [0,0,0],
-  [0,0,0],
-  [0,0,0],
-]
+const prodMatrice = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
 
-for(let i = 0; i<3; i++){
-   for(let j=0; j<3; j++){
-    
-   }
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    for (let pcl = 0; pcl < 3; pcl++)
+      prodMatrice[i][j] = matriceA[i][j] * matriceB[i][j];
+  }
 }
+console.log(prodMatrice);
 
 //N°4 Calcul du Produit de Deux Tableaux
 
