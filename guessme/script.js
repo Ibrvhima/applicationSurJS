@@ -50,7 +50,16 @@ check.addEventListener("click", function () {
     }
 
     document.querySelector(".score").textContent = score;
-  } 
+  } else if (guess < secretNumber)
+    if (score > 0) {
+      message.textContent = "📉 Trop petit";
+      score--;
+      document.querySelector(".guess").value = "";
+      document.querySelector(".score").textContent = score;
+    } else {
+      message.textContent = "🤦‍♂️OUPS! vous avez perdu";
+      document.querySelector("body").style.backgroundColor = "red";
+    }
 });
 // EVENEMENT SUR LE BOUTON "AGAIN"
 
