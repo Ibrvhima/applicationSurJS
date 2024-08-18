@@ -77,6 +77,7 @@ function searchRecette(recetteTitle, ingrediants) {
 }
 
 
+
 //CREATION DE LA FONCTION QUI PERMET DE MODIFIER UNE RECETTE
 
 function updateRecette(title, ingrediants, instruction, time, difficult) {
@@ -105,10 +106,23 @@ function removeRecette(recetteTitle) {
 
 //CREATION DE LA FONCTION QUI NOUS PERMET DE FILTER LES RECETTE
 
-function filterRecette(time, difficult) {
+function filterRecette(time) {
   const recette = tabRecettes.find((recette) => recette.time === time);
   if (recette) {
-    console.log(recette);
+    console.log("****************************************");
+    console.log(`les recettes qui ont une durée de ${time}min sont ${recette}`);
+    console.log("****************************************");
+  } else {
+    console.log("a nothing recette");
+  }
+}
+
+function filterRecette(difficult) {
+  const recette = tabRecettes.find((recette) => recette.difficult === difficult);
+  if (recette) {
+    console.log("***********************************************");
+    console.log(`les recettes qui ont une difficulté de préparation ${difficult} sont: ${recette}`);
+    console.log("***********************************************");
   } else {
     console.log("a nothing recette");
   }

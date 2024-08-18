@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+/***********************section header *******************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding: 0 4rem;
+}
+
+.logotype {
+  height: 4rem;
+}
+
+.navigation {
+  padding: 0 4rem;
+  margin-top: 10px;
+}
+.styl-type {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li .liste-link:link,
+.liste-link:visited {
+  text-decoration: none;
+  color: #333;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 8px 15px;
+}
+
+li .liste-link:hover,
+.liste-link:active {
+  border: 2px solid #1e5ec4;
+  border-radius: 8px;
+}
+
+/********************************section hero******************************/
+.section-hero {
+  padding: 4.8rem 9.6rem;
+  background-image: url("images/pexels-tima-miroshnichenko-6195120.jpg");
+  background-size: cover;
+}
+
+.hero-description {
+  max-width: 35rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #ffffff7a;
+}
+
+.headding-primary {
+  font-size: 3.2rem;
+  line-height: 1em;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-booton {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: #1e5ec4;
+  border-radius: 8px;
+}
+
+/*********************section about us********************************/
+.section-about {
+  padding: 4.8rem 9.6rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.image-about {
+  height: 30rem;
+}
+
+.headding-secondary {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1e5ec4;
+  margin-bottom: 10px;
+}
+
+.about-description {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.lorem {
+  font-size: 15px;
+  line-height: 1.5em;
+  word-spacing: 0.77px;
+  margin-bottom: 2rem;
+}
+
+.flexy-list {
+  margin-bottom: 30px;
+  line-height: 2.2em;
+}
+.flexy {
+  display: flex;
+  align-items: center;
+}
+
+.about-bouton {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: #1e5ec4;
+  border-radius: 8px;
+}
+
+.ionicons {
+  border: #1e5ec4 2px solid;
+  font-weight: 900;
+  color: #1e5ec4;
+  margin-right: 10px;
+}
+
+/**************************SECTION SERVICES***********************/
+.section-service {
+  padding: 4.8rem 9.8rem;
+}
+
+.services {
+  text-align: center;
+}
+.service-description {
+  font-weight: 600;
+  padding: 0 14rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box-service {
+  max-width: 16rem;
+  border: #333 solid 1px;
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.icone-service{
+  color: #1e5ec4;
+  text-align: center;
+  font-size: 28px;
+}
+
+.title-box {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+
+.grid-service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
