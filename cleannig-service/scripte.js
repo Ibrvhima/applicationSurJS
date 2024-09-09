@@ -7,9 +7,8 @@ function calAge(birthYear) {
 
   const age = 2024 - birthYear;
   return age;
-  
 }
 
-const firstName = "Amadou"
+const firstName = "Amadou";
 
-calAge(1990)
+calAge(1990);
