@@ -21,8 +21,19 @@ for(const item of menu)
   console.log(item);
  for(const item of menu.entries()){
   console.log(item);
+
 }
 
+const students =[
+  {nameStudent:"ousmane", age: 14},
+  {nameStudent:"fatou", age: 18},
+  {nameStudent:"oumar", age: 17},
+  {nameStudent:"Mamadou", age: 20},
+  {nameStudent:"Amadou", age: 14},
+]
+for(const items of students.entries()){
+  console.log(items);
+}
 
 
 
