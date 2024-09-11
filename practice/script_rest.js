@@ -15,4 +15,14 @@ console.log(heroescoffeeMatam);
 const array =[1,2,3,4,5,8]
 array
 
+//BOUCLE FOR OF
+const menu = [...heroescoffee.mainMenu, ...heroescoffee.startMenu]
+for(const item of menu)
+  console.log(item);
+ for(const item of menu.entries()){
+  console.log(item);
+}
+
+
+
 
