@@ -61,3 +61,11 @@ for (const day of days) {
       }
       `);
 }
+
+//transformation d'un objet en un tableauh
+const properties = Object.keys(openinHours)
+console.log(properties);
+
+for (const day of Object.keys(openinHours)){
+  console.log(day);
+}
