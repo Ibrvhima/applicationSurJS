@@ -33,22 +33,39 @@ const match = {
   score: "3:2",
   scorers: ["Fati", "Depay", "Fati", "Benzema", "Vinicius"],
   date: "12 septembte 2024",
-  odds: {
+  cotes: {
     equipe1: 1.5,
     x: 3.75,
     equipe2: 5.0,
   },
-
-  // Méthode pour afficher les buteurs
-  afficherScorers() {
-    match.scorers.forEach((scorer, index) => {
-      console.log(`But ${index + 1} : ${scorer}`);
-    });
-  },
 };
 
-// 1. Parcours du tableau scorers
+//Parcours du tableau scorers
 match.scorers.forEach((scorer, index) => {
-  console.log(`But ${index + 1} : ${scorer}`);
+  console.log(`But ${index+1} : ${scorer}`);
 });
 
+//Calcul de la moyenne des cotes
+const cotes = Object.values(match.cotes);
+const averagecotes =
+  cotes.reduce((sum, cotes) => sum + cotes, 0) / cotes.length;
+console.log(`Moyenne des cotes : ${averagecotes.toFixed(2)}`);
+
+//Affichage des cotes
+console.log(`Cote de victoire du ${match.equipe1} : ${match.cotes.equipe1}`);
+console.log(`Cote du match nul : ${match.cotes.x}`);
+console.log(`Cote de victoire du ${match.equipe2} : ${match.cotes.equipe2}`);
+
+//Création de l'objet buteurs
+const buteurs = {};
+match.scorers.forEach((scorer) => {
+  buteurs[scorer] = (buteurs[scorer] || 0) + 1;
+});
+console.log(buteurs);
+
+//Propriété calculée pour l'équipe favorite
+const faveurTeam = function (equipe1, equipe2,x) {
+  return match.cotes.equipe1 < match.cotes.equipe2 ? match.equipe1 : match.equipe2;
+};
+
+console.log(`L'équipe favorite est : ${faveurTeam(match.cotes.equipe1, match.cotes.equipe2equipe2)}`);
