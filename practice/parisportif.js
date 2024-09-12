@@ -32,10 +32,23 @@ const match = {
   ],
   score: "3:2",
   scorers: ["Fati", "Depay", "Fati", "Benzema", "Vinicius"],
-  date: "12 mars 2024",
+  date: "12 septembte 2024",
   odds: {
     equipe1: 1.5,
     x: 3.75,
     equipe2: 5.0,
   },
+
+  // Méthode pour afficher les buteurs
+  afficherScorers() {
+    match.scorers.forEach((scorer, index) => {
+      console.log(`But ${index + 1} : ${scorer}`);
+    });
+  },
 };
+
+// 1. Parcours du tableau scorers
+match.scorers.forEach((scorer, index) => {
+  console.log(`But ${index + 1} : ${scorer}`);
+});
+
