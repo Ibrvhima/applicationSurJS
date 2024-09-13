@@ -1,4 +1,4 @@
-const airline = "air Guinée";
+const airline = "Air Guinée";
 
 const plane = "A320";
 
@@ -8,6 +8,17 @@ console.log(plane[2]);
 console.log(plane[3]);
 
 console.log(plane.length);
+
+//convertion d'une chaine en majuscule
+console.log(airline.toUpperCase());
+
+//convertion d'une chaine en minuscule
+console.log(airline.toLowerCase());
+
+const passenger = "feLiX LouA";
+const passengerLower = passenger.toLowerCase()
+
+console.log(passengerLower[0].toUpperCase() + passengerLower.slice(1));
 
 //Methode appliqué sur les string
 
@@ -31,21 +42,18 @@ console.log(school.slice(0, 5));
 //Utilisez `slice()` et `lastIndexOf()` pour extraire le dernier mot.
 console.log(school.slice(6));
 
-
 //### Exercice 3 : Vérification d'une position (Avancé)
 
 //Écrivez une fonction `checkMiddleSeat(seat)` qui prend en entrée un numéro de siège d'avion (par exemple '23B') et affiche si le siège est un siège du milieu (B ou E).
 
 //Utilisez `slice()` pour extraire la dernière lettre et vérifiez si c'est un 'B' ou un 'E'.
 
-function checkMiddleSeat(seat){
-         const checkeCaract = seat.slice(-1)
-         if (checkeCaract === "E" || checkeCaract === "B"){
-                  console.log("IS A MIDDEL SEAT");
-         }
-         else{
-                  console.log("IS NOT A MIDDEL SEAT");
-         }
- 
+function checkMiddleSeat(seat) {
+  const checkeCaract = seat.slice(-1);
+  if (checkeCaract === "E" || checkeCaract === "B") {
+    console.log("IS A MIDDEL SEAT");
+  } else {
+    console.log("IS NOT A MIDDEL SEAT");
+  }
 }
-checkMiddleSeat("23E")
+checkMiddleSeat("23E");
