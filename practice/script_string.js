@@ -16,7 +16,7 @@ console.log(airline.toUpperCase());
 console.log(airline.toLowerCase());
 
 const passenger = "feLiX LouA";
-const passengerLower = passenger.toLowerCase()
+const passengerLower = passenger.toLowerCase();
 
 console.log(passengerLower[0].toUpperCase() + passengerLower.slice(1));
 
@@ -57,3 +57,21 @@ function checkMiddleSeat(seat) {
   }
 }
 checkMiddleSeat("23E");
+
+const maskCreditCard = function (number) {
+  const str = number + "";
+  const forVisibleNumber = str.slice(-4);
+  const maskPad = (forVisibleNumber.padStart(str.length, "*"));
+
+  let result = "";
+  for (let i = 0; i < maskPad.length; i++) {
+    if (i > 0 && i % 4 === 0) {
+      result += " ";
+    }
+    result += maskPad[i];
+  }
+  return result;
+};
+
+maskCreditCard(4455734589373450);
+console.log(maskCreditCard("4455734589373450"));
