@@ -16,11 +16,12 @@ const ex2 = transformer("JavaScript is the best langage !", oneWord);
 
 console.log(ex1);
 
-const greet = function (greeting) {
-  return function (name) {
+const greet = greeting => {
+  return  name => {
     console.log(`${greeting} ${name}`);
   };
 };
 
 const greeterHey = greet("ciao");
-greeterHey("Amad")
+greeterHey("fatoumata")
+
