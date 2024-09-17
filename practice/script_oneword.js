@@ -9,11 +9,18 @@ const upperFirstWord = function (str) {
 
 const transformer = function (str, fnTranform) {
   return fnTranform(str);
-
 };
 
-
-const ex1 = transformer("JavaScript is the best langage !", upperFirstWord)
-const ex2 = transformer("JavaScript is the best langage !", oneWord)
+const ex1 = transformer("JavaScript is the best langage !", upperFirstWord);
+const ex2 = transformer("JavaScript is the best langage !", oneWord);
 
 console.log(ex1);
+
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet("ciao");
+greeterHey("Amad")
