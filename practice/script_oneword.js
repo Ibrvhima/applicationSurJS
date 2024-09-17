@@ -25,3 +25,6 @@ const greet = greeting => {
 const greeterHey = greet("ciao");
 greeterHey("fatoumata")
 
+
+
+
